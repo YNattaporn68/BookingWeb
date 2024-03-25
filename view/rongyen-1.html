@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Rong Yen Floor 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    @media (max-width: 768px) {
+        .table {
+            width: 90%; /* ปรับขนาดตารางให้เต็มรอบหน้าจอ */
+        }
+    }
+
+    html, body {
+        overflow: hidden; /* ป้องกันการเกิด scrollbar ทั้งหมดในหน้าเว็บ */
+        height: 100%; /* ให้ขนาดสูงสุดของหน้าเว็บเท่ากับขนาดหน้าจอ */
+        font-family: 'Mitr', sans-serif;
+    }
+
+    .store {
+        width: 1000px;
+        height: 20px;
+        background-color: #9f886f;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .waterStore {
+        width: 120px;
+        height: 30px;
+        padding: 10px;
+        float: left;/* ทำให้กล่องลากไปทางซ้าย */
+        margin-right: auto;
+        background-color: #9f886f;
+        transform: rotate(90deg);
+        transform-origin: left;
+        position: absolute;
+        top: 36%;/*ทำให้ร้านน้ำเลื่อนลงไป*/
+    }
+
+    img{
+        width:90px; 
+    }
+
+    table {
+        padding: 0;
+        margin: 0;
+        border-collapse: collapse;
+    }
+
+    .table img{
+        margin-bottom: 40px;
+    }
+
+    table td {
+        padding: 0;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none; /* ลบเส้นใต้ */
+        color: inherit; /* ใช้สีของข้อความเหมือนกับข้อความปกติ */
+    }
+
+    .button-container {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+    }
+
+    .button {
+            /* margin: 5px; */
+            padding: 10px 20px;
+            font-family: 'Mitr', sans-serif;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            /* border-radius: 5px; */
+            cursor: pointer;
+            font-size: 16px;
+            width:120px; 
+            border: 1px solid black;
+    }
+
+    .button:nth-child(1) {
+        background-color: #6D5A47;
+        color: #fff; /* เลือกสีตัวอักษร */
+    }
+
+    /* ปุ่มที่สอง */
+    .button:nth-child(2) {
+        background-color: #C5B3A0;
+        color: #000; /* เลือกสีตัวอักษร */
+    }
+
+    /* ปุ่มที่สาม */
+    .button:nth-child(3) {
+        background-color: #6D5A47; 
+        color: #fff; /* เลือกสีตัวอักษร */
+    }
+
+    /* ปุ่มที่4 */
+    .button:nth-child(4) {
+        background-color: #6D5A47; 
+        color: #fff; /* เลือกสีตัวอักษร */
+    }
+</style>
+
+<body style="background-color: #f2f2f2; font-family: 'Mitr', sans-serif;">
+    <center>
+        <div class="store">
+            ร้านค้า
+        </div>
+        <div class="waterStore" style="transform: rotate(90deg) translateX(20px) translateY(-10px);">
+            ร้านน้ำปั่น
+        </div>
+        <div class="table">
+            <table style="transform: translateX(-360px) translateY(70px);">
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table">
+            <table style="transform: translateX(-40px) translateY(-468px);">
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table">
+            <table style="transform: translateX(250px) translateY(-1006px);">
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table">
+            <table style="transform: translateX(450px) translateY(-1545px);">
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='rongron.html'">โรงร้อน</button>
+            <button class="button" onclick="window.location.href=''">โรงเย็น-1</button>
+            <button class="button" onclick="window.location.href='rongyen-2.html'">โรงเย็น-2</button>
+            <button class="button" onclick="window.location.href='HomePage.html'">หน้าหลัก</button>
+        </div>
+
+    </center>
+    
+</body>
+</html>
