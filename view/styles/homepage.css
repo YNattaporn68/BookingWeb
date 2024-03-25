@@ -72,6 +72,7 @@ nav ul li:first-child a {
 }
 .header-left{
     background-image:url('HomePage.png');
+    background-repeat: no-repeat;
     width: 52%;
     padding: 45px;
 }

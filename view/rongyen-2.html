@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Rong Yen Floor 2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -24,7 +24,6 @@
         height: 20px;
         background-color: #9f886f;
         padding: 10px;
-        margin: 10px;
     }
     .door1 {
         width: 100px;
@@ -58,16 +57,54 @@
         padding-left: 20px;
         margin: 0;
     }
-    .button table{
-        transform: translateX(900px) translateY(-650px); 
-        padding: 0px; 
-        margin: 10px; 
-        width: 70px;
-        text-align: center;
-    }
     a {
         text-decoration: none; /* ลบเส้นใต้ */
         color: inherit; /* ใช้สีของข้อความเหมือนกับข้อความปกติ */
+    }
+    .button-container {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+    }
+
+    .button {
+            /* margin: 5px; */
+            padding: 10px 20px;
+            font-family: 'Mitr', sans-serif;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            /* border-radius: 5px; */
+            cursor: pointer;
+            font-size: 16px;
+            width:120px; 
+            border: 1px solid black;
+    }
+
+    .button:nth-child(1) {
+        background-color: #6D5A47;
+        color: #fff; /* เลือกสีตัวอักษร */
+    }
+
+    /* ปุ่มที่สอง */
+    .button:nth-child(2) {
+        background-color: #6D5A47;
+        color: #fff; /* เลือกสีตัวอักษร */
+    }
+
+    /* ปุ่มที่สาม */
+    .button:nth-child(3) {
+        background-color: #C5B3A0; 
+        color: #000; /* เลือกสีตัวอักษร */
+    }
+
+    /* ปุ่มที่4 */
+    .button:nth-child(4) {
+        background-color: #6D5A47; 
+        color: #fff; /* เลือกสีตัวอักษร */
     }
 </style>
 
@@ -78,15 +115,15 @@
         <div class="door1" style="transform: rotate(-90deg) translateX(-140px) translateY(1730px);">ประตู</div>
         <div class="door1" style="transform: rotate(-90deg) translateX(-700px) translateY(1590px);">ประตู</div>
         <div class="table">
-            <table style="transform: translateX(-910px) translateY(200px);">
+            <table style="transform: translateX(-1110px) translateY(200px);">
                 <tr>
-                    <td><a href="" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
                 <tr>
-                    <td><a href="" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
                 <tr>
-                    <td><a href="" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
             </table>
         </div>
@@ -94,19 +131,19 @@
         <div class="table">
             <table style="transform: translateX(-400px) translateY(-155px);">
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
             </table>
         </div>
@@ -114,73 +151,73 @@
         <div class="table">
             <table style="transform: translateX(200px) translateY(-510px);">
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
                 </tr>
             </table>
         </div>
 
         <div class="table">
-            <table style="transform: translateX(400px) translateY(-400px);">
+            <table style="transform: translateX(300px) translateY(-370px);">
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png" style="transform: rotate(90deg);"></image></a></td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="table">
-            <table style="transform: translateX(900px) translateY(-1070px);">
-                <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
-                </tr>
-                <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
-                </tr>
-                <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png" style="transform: rotate(90deg);"></image></a></td>
                 </tr>
             </table>
         </div>
 
         <div class="table">
-            <table style="border: 1px solid; transform: translateX(-674px) translateY(-1030px); width: 500px; height: 300px;">
+            <table style="transform: translateX(890px) translateY(-1070px);">
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table">
+            <table style="border: 1px solid; transform: translateX(-674px) translateY(-1010px); width: 500px; height: 300px;">
+                <tr>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
                     <td style="padding-top: 0px; margin-top: 0px;"><div class="door2">ประตู</div></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
                 </tr>
                 <tr >
                     <td style="padding: 20px;"></td>
@@ -190,30 +227,20 @@
                     <td style="padding-bottom: 10px;"><div class="door2" style="transform: rotate(-90deg);">ประตู</div></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
-                    <td><a href="ConfirmPage.html" ><image src="table.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.html" ><image src="table1.png"></image></a></td>
                 </tr>
             </table>
         </div>
 
-        <div class="button">
-            <table style="transform: scale(1.2) translateX(755px) translateY(-970px);">
-                <tr style="border: 1px solid black; background-color: #6D5A47;">
-                    <td style="text-align: center; padding-left: 0;"><a href="rongron.html">โรงร้อน</a></td>
-                </tr>
-                <tr style="border: 1px solid black; background-color: #6D5A47;">
-                    <td style="text-align: center; padding-left: 0;"><a href="rongyen-1.html" >โรงเย็น-1</a></td>
-                </tr>
-                <tr style="border: 1px solid black; background-color: #C5B3A0;">
-                    <td style="color: #ffff; text-align: center; padding-left: 0;"><a href="">โรงเย็น-2</a></td>
-                </tr>
-                <tr style="border: 1px solid black; background-color: #C5B3A0;">
-                    <td style="text-align: center; padding-left: 0;"><a href="HomePage.html">หน้าหลัก</a></td>
-                </tr>
-            </table>
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='rongron.html'">โรงร้อน</button>
+            <button class="button" onclick="window.location.href='rongyen-1.html'">โรงเย็น-1</button>
+            <button class="button" onclick="window.location.href=''">โรงเย็น-2</button>
+            <button class="button" onclick="window.location.href='HomePage.html'">หน้าหลัก</button>
         </div>
 
     </center>
