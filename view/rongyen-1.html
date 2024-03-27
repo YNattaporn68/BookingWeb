@@ -27,20 +27,18 @@
         height: 20px;
         background-color: #9f886f;
         padding: 10px;
-        margin: 10px;
     }
 
     .waterStore {
         width: 120px;
         height: 30px;
         padding: 10px;
-        float: left;/* ทำให้กล่องลากไปทางซ้าย */
         margin-right: auto;
         background-color: #9f886f;
-        transform: rotate(90deg);
+        transform: translateX(-550px) translateY(220px) rotate(90deg);
         transform-origin: left;
         position: absolute;
-        top: 36%;/*ทำให้ร้านน้ำเลื่อนลงไป*/
+        text-align: center;
     }
 
     img{
@@ -115,11 +113,20 @@
 
 <body style="background-color: #f2f2f2; font-family: 'Mitr', sans-serif;">
     <center>
-        <div class="store">
-            ร้านค้า
-        </div>
-        <div class="waterStore" style="transform: rotate(90deg) translateX(20px) translateY(-10px);">
-            ร้านน้ำปั่น
+        <div class="store">ร้านค้า</div>
+        <!-- <div class="waterStore">ร้านน้ำปั่น</div> -->
+        <div class="table">
+            <table>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="waterStore">ร้านน้ำปั่น</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
         </div>
         <div class="table">
             <table style="transform: translateX(-360px) translateY(70px);">
