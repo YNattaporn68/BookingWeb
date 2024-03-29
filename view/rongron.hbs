@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Rong Ron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    html, body {
+        background-color: #f2f2f2;
+        overflow: hidden; /* ป้องกันการเกิด scrollbar ทั้งหมดในหน้าเว็บ */
+        height: 100%; /* ให้ขนาดสูงสุดของหน้าเว็บเท่ากับขนาดหน้าจอ */
+        font-family: 'Mitr', sans-serif;
+    }
+    .store {
+        width: 1000px;
+        height: 20px;
+        background-color: #9f886f;
+        padding: 10px;
+    }
+
+    img {
+        width: 80px;
+    }
+
+    table {
+        padding-top: 50px;
+    }
+
+    td {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .door {
+        width: 100px;
+        height: 20px;
+        font-family: 'Mitr', sans-serif;
+        background-color: #9f886f;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+        transform-origin: left;
+        text-align: center;
+    }
+
+    .button-container {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+    }
+
+    .button {
+            /* margin: 5px; */
+            padding: 10px 20px;
+            font-family: 'Mitr', sans-serif;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            height: 50px;
+            width: 125px; 
+            border: 1px solid black;
+    }
+
+    .button:nth-child(1) {
+        background-color: #C5B3A0;
+        color: #000; /* เลือกสีตัวอักษร */
+        font-size: 20px;
+    }
+
+    /* ปุ่มที่สอง */
+    .button:nth-child(2) {
+        background-color: #6D5A47;
+        color: #fff; /* เลือกสีตัวอักษร */
+    }
+
+    /* ปุ่มที่สาม */
+    .button:nth-child(3) {
+        background-color: #6D5A47; 
+        color: #fff; /* เลือกสีตัวอักษร */
+    }
+
+    /* ปุ่มที่4 */
+    .button:nth-child(4) {
+        background-color: #6D5A47; 
+        color: #fff; /* เลือกสีตัวอักษร */
+    }
+</style>
+<body>
+    <center>
+        <div class="store">ร้านค้า</div>
+        <div class="table">
+            <table>
+                <tr>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png"></image></a></td>
+                    <td><a href="ConfirmPage.hbs" ><image src="style/table1.png" style="transform: rotate(90deg);"></image></a></td>
+                </tr>
+                <tr>
+                    <td><div class="door">ประตู</div></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><div class="door">ประตู</div></td>
+                </tr>
+            </table>
+            
+        </div>
+
+        
+        
+
+        <div class="button-container">
+            <button class="button" onclick="window.location.href=''">โรงร้อน</button>
+            <button class="button" onclick="window.location.href='rongyen-1.hbs'">โรงเย็น-1</button>
+            <button class="button" onclick="window.location.href='rongyen-2.hbs'">โรงเย็น-2</button>
+            <button class="button" onclick="window.location.href='HomePage.hbs'">หน้าหลัก</button>
+        </div>
+
+    </center>
+    
+</body>
+</html>
