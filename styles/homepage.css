@@ -58,7 +58,12 @@ nav ul li a {
     padding: 14px 20px;
     text-decoration: none;
 }
+
 nav ul li:last-child a {
+    color: black;
+}
+
+nav ul li:nth-child(2) a {
     color: black;
 }
 

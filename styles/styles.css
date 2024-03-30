@@ -34,7 +34,7 @@ body {
 
 .other-options p {
     margin: 10;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .other-options a.button {
@@ -48,3 +48,22 @@ body {
     border-radius: 30px;
 }
 
+.other-options button.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff443a;
+    border-radius: 30px;
+    font-family: 'Mitr', sans-serif;
+    border: none;
+    font-size: 16px;
+}
+
+.alert {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}

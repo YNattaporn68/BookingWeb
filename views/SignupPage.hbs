@@ -10,24 +10,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="login-container">
-    <form action="#" method="POST">
-        <label for="username">Username</label><br>
-        <input type="text" id="username" name="username" placeholder="Enter your username here" required>
-    
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password" placeholder="Enter your password here" required>
+    <div class="container">
+        <div class="login-container">
+            <form action="/auth/SignupPage" method="POST">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name here" required>
 
-        <label for="password">Confirm Password</label><br>
-        <input type="password" id="password" name="password" placeholder="Re-enter your password" required>
-        
-      
-    </form>
-    <div class="other-options" >
-        <a href="HomePage.hbs" class="button">Go back</a>
-        <a href="HomePage.hbs" class="button">Sign up</a>
-        <p>already have an account? <a href="LoginPage.hbs">Login</a></p>
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username" placeholder="Enter your buasri ID here" required>
+            
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your password here" required>
+
+                <label for="passwordConfirm">Confirm Password</label><br>
+                <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Re-enter your password" required>
+                
+                <div class="other-options" >
+                    <a href="HomePage.hbs" class="button">Go back</a>
+                    <button type="submit" class="button">Sign up</button>
+                    <p>already have an account? <a href="./LoginPage.hbs">Login</a></p>
+                </div>
+            </form>
+        </div>
+        {{#if message}}
+            <h4 class="alert">! {{message}} !</h4>
+        {{/if}}
     </div>
-</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </body>
 </html>

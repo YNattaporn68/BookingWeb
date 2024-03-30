@@ -38,4 +38,13 @@ router.get('/Endpoint.hbs', (request, response) => {
     response.render('Endpoint');
   });
 
+router.get('/profile.hbs', (request, response) => {
+    response.render('profile');
+});
+
+router.get('/logout', (request, response) => {
+    response.clearCookie('jwt');
+    response.redirect('/');
+});
+
 module.exports = router;
