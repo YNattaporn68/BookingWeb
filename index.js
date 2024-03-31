@@ -5,8 +5,6 @@ dotenv.config();
 // const hbs = require('hbs');
 const generalRouter = require('./routers/general'); // This is the router we created
 
-dotenv.config({ path: './.env'});
-
 const app = express();
 
 const db = mysql.createConnection({
@@ -45,3 +43,5 @@ app.use('/auth', require('./routers/auth'));
 app.listen(9989, () => { 
     console.log('Server is running on http://localhost:9989') 
 });
+
+module.exports = app;
