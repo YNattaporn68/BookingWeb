@@ -99,4 +99,4 @@ exports.HomePage = (req, res) => {
         res.render('HomePage', { name: null }); // ส่ง name เป็น null ไปยังหน้า profile.hbs
     }
 }
-
+//1234
