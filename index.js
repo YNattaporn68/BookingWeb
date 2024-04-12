@@ -1,7 +1,7 @@
 const express = require('express'); // This is the express module
 const mysql = require("mysql");
-const dotenv = require('dotenv');
-dotenv.config();
+const dotenv = require("dotenv").config();
+const cookieParser = require("cookie-parser");
 // const hbs = require('hbs');
 const generalRouter = require('./routers/general'); // This is the router we created
 
@@ -25,6 +25,7 @@ db.connect( (error) => {
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(cookieParser());
 app.set('view engine', 'hbs');
 app.use('/styles', express.static('styles'));
 

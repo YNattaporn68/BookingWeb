@@ -1,6 +1,7 @@
 const mysql = require("mysql");
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const { promisify } = require("util");
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -36,9 +37,7 @@ exports.SignupPage = (req, res) => {
                 console.log(error);
             } else {
                 console.log(results);
-                return res.render('SignupPage', {
-                    message: 'User registered'
-                });
+                return res.redirect('/');
             }
         })
         
@@ -47,46 +46,75 @@ exports.SignupPage = (req, res) => {
 }
 
 exports.LoginPage = (req, res) => {
-    console.log(req.body);
+    try {
+        const { username, password } = req.body;
+        if (!username || !password) {
+            return res.render('LoginPage', {
+                message: "Please Provide an email and password"
+            })
+        }
+        db.query('SELECT * FROM users WHERE username = ?', [username], async (err, results) => {
+            console.log(results);
+            if (!results || !await bcrypt.compare(password, results[0].password)) {
+                res.render('LoginPage', {
+                    message: 'Email or Password is incorrect'
+                })
+            } else {
+                const id = results[0].id;
 
-    const { username, password } = req.body;
+                const token = jwt.sign({ id }, process.env.JWT_SECRET, {
+                    expiresIn: process.env.JWT_EXPIRES_IN
+                });
 
-    // Check if username and password are provided
-    if (!username || !password) {
-        return res.render('LoginPage', {
-            message: 'Please provide both username and password'
-        });
+                console.log("the token is " + token);
+
+                const cookieOptions = {
+                    expires: new Date(
+                        Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
+                    ),
+                    httpOnly: true
+                }
+                res.cookie('userSave', token, cookieOptions);
+                res.status(200).redirect("/");
+            }
+        })
+    } catch (err) {
+        console.log(err);
     }
+}
 
-    db.query('SELECT * FROM users WHERE username = ?', [username], async (error, results) => {
-        if(error) {
-            console.log(error);
-        }
-        if(results.length == 0 || !(await bcrypt.compare(password, results[0].password))) {
-            return res.status(401).render('LoginPage', {
-                message: 'Username or password is incorrect'
+exports.isLoggedIn = async (req, res, next) => {
+    if (req.cookies.userSave) {
+        try {
+            // 1. Verify the token
+            const decoded = await promisify(jwt.verify)(req.cookies.userSave,
+                process.env.JWT_SECRET
+            );
+            console.log(decoded);
+
+            // 2. Check if the user still exist
+            db.query('SELECT * FROM users WHERE id = ?', [decoded.id], (err, results) => {
+                console.log(results);
+                if (!results) {
+                    return next();
+                }
+                req.user = results[0];
+                return next();
             });
-        } else {
-            // Generate JWT token
-            const id = results[0].id;
-            const token = jwt.sign({ id: id }, process.env.JWT_SECRET, {
-                expiresIn: 3600 // ให้ token มีอายุเป็น 3600 วินาที (1 ชั่วโมง)
-            });
-
-            console.log("The token is: " + token);
-
-            // Set cookie
-            const cookieOptions = {
-                expires: new Date(
-                    Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
-                ),
-                httpOnly: true
-            };
-
-            res.cookie('jwt', token, cookieOptions);
-            res.redirect('/HomePage.hbs');
+        } catch (err) {
+            console.log(err)
+            return next();
         }
+    } else {
+        next();
+    }
+}
+exports.logout = (req, res) => {
+    res.cookie('userSave', 'logout', {
+        expires: new Date(Date.now() + 2 * 1000),
+        httpOnly: true
     });
+    res.status(200).redirect("/");
 }
 
 exports.HomePage = (req, res) => {
