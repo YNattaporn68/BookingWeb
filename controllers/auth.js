@@ -109,12 +109,12 @@ exports.isLoggedIn = async (req, res, next) => {
         next();
     }
 }
+
 exports.logout = (req, res) => {
-    res.cookie('userSave', 'logout', {
-        expires: new Date(Date.now() + 2 * 1000),
-        httpOnly: true
-    });
-    res.status(200).redirect("/");
+    // เคลียร์คุกกี้ที่เกี่ยวข้องกับการ login
+    res.clearCookie('userSave');
+    // ส่งผู้ใช้กลับไปยังหน้า SignupPage.hbs
+    res.redirect('/SignupPage.hbs');
 }
 
 exports.HomePage = (req, res) => {

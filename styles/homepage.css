@@ -81,3 +81,16 @@ nav ul li:first-child a {
     width: 50%;
     padding: 45px;
 }
+
+.logout {
+    font-family: 'Mitr', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 60px;
+    border: none;
+    font-size: 16px;
+}
