@@ -21,4 +21,11 @@ describe('GET /HomePage', () => {
     // เช็คว่าหน้า HTML ไม่มีชื่อที่ต้องการแสดง
     expect(res.text).not.toContain('Welcome');
   });
+
+  it('responds with 302 status and redirects to SignupPage when not logged in', async () => {
+    const res = await request(app)
+      .get('/profile.hbs') // เปลี่ยนไปที่หน้า profile ที่เพิ่มขึ้น
+      .expect('Location', '/SignupPage.hbs')
+      .expect(302);
+  });
 });

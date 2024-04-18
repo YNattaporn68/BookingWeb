@@ -1,7 +1,7 @@
 const authController = require('../controllers/auth');
 
-describe('HomePage Controller', () => {
-  it('renders HomePage with name when user logged in', async () => {
+describe('Signup Controller', () => {
+  it('renders HomePage with name when user signed up', async () => {
     const req = {
       user: {
         name: 'TestUser'
@@ -11,12 +11,12 @@ describe('HomePage Controller', () => {
       render: jest.fn()
     };
 
-    authController.HomePage(req, res);
+    authController.SignupPage(req, res);
 
     expect(res.render).toHaveBeenCalledWith('HomePage', { name: 'TestUser' });
   });
 
-  it('renders HomePage without name when user not logged in', async () => {
+  it('renders SignupPage when user not signed up', async () => {
     const req = {
       user: null
     };
@@ -24,8 +24,8 @@ describe('HomePage Controller', () => {
       render: jest.fn()
     };
 
-    authController.HomePage(req, res);
+    authController.SignupPage(req, res);
 
-    expect(res.render).toHaveBeenCalledWith('HomePage', { name: null });
+    expect(res.render).toHaveBeenCalledWith('SignupPage');
   });
 });
