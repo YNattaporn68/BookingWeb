@@ -37,7 +37,17 @@ router.get('/rongyen-2.hbs', authController.isLoggedIn, (request, response) => {
 });
 
 router.get('/ConfirmPage.hbs', authController.isLoggedIn, (request, response) => {
-    response.render('ConfirmPage');
+  const location = request.query.location;
+  // คำนวณเวลา 15 นาที
+  const now = new Date();
+  now.setMinutes(now.getMinutes() + 15);
+  const hours = now.getHours();
+  let minutes = now.getMinutes();
+  // จัดรูปแบบเวลาให้เป็นสองหลัก
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  const timeString = hours + ':' + minutes;
+  // ส่งค่า location และ time ไปยังหน้า ConfirmPage.hbs
+  response.render('ConfirmPage', { location: location, time: timeString });
 });
 
 router.get('/Endpoint.hbs', authController.isLoggedIn, (request, response) => {
