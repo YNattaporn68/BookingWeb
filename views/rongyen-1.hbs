@@ -1,25 +1,31 @@
 {{!-- rongron-1 --}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Rong Yen Floor 2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <style>
     @media (max-width: 768px) {
         .table {
-            width: 90%; /* ปรับขนาดตารางให้เต็มรอบหน้าจอ */
+            width: 90%;
+            /* ปรับขนาดตารางให้เต็มรอบหน้าจอ */
         }
     }
 
-    html, body {
-        overflow: hidden; /* ป้องกันการเกิด scrollbar ทั้งหมดในหน้าเว็บ */
-        height: 100%; /* ให้ขนาดสูงสุดของหน้าเว็บเท่ากับขนาดหน้าจอ */
+    html,
+    body {
+        overflow: hidden;
+        /* ป้องกันการเกิด scrollbar ทั้งหมดในหน้าเว็บ */
+        height: 100%;
+        /* ให้ขนาดสูงสุดของหน้าเว็บเท่ากับขนาดหน้าจอ */
         font-family: 'Mitr', sans-serif;
     }
 
@@ -42,8 +48,8 @@
         text-align: center;
     }
 
-    img{
-        width:90px; 
+    img {
+        width: 90px;
     }
 
     table {
@@ -52,7 +58,7 @@
         border-collapse: collapse;
     }
 
-    .table img{
+    .table img {
         margin-bottom: 40px;
     }
 
@@ -60,55 +66,61 @@
         padding: 0;
         margin: 0;
     }
-    
+
     a {
-        text-decoration: none; /* ลบเส้นใต้ */
-        color: inherit; /* ใช้สีของข้อความเหมือนกับข้อความปกติ */
+        text-decoration: none;
+        /* ลบเส้นใต้ */
+        color: inherit;
+        /* ใช้สีของข้อความเหมือนกับข้อความปกติ */
     }
 
     .button-container {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .button {
-            /* margin: 5px; */
-            padding: 10px 20px;
-            font-family: 'Mitr', sans-serif;
-            color: white;
-            cursor: pointer;
-            font-size: 18px;
-            height: 50px;
-            width: 125px; 
-            border: 1px solid black;
+        /* margin: 5px; */
+        padding: 10px 20px;
+        font-family: 'Mitr', sans-serif;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        height: 50px;
+        width: 125px;
+        border: 1px solid black;
     }
 
     .button:nth-child(1) {
         background-color: #6D5A47;
-        color: #fff; /* เลือกสีตัวอักษร */
+        color: #fff;
+        /* เลือกสีตัวอักษร */
     }
 
     /* ปุ่มที่สอง */
     .button:nth-child(2) {
         background-color: #C5B3A0;
-        color: #000; /* เลือกสีตัวอักษร */
+        color: #000;
+        /* เลือกสีตัวอักษร */
         font-size: 20px;
     }
 
     /* ปุ่มที่สาม */
     .button:nth-child(3) {
-        background-color: #6D5A47; 
-        color: #fff; /* เลือกสีตัวอักษร */
+        background-color: #6D5A47;
+        color: #fff;
+        /* เลือกสีตัวอักษร */
     }
 
     /* ปุ่มที่4 */
     .button:nth-child(4) {
-        background-color: #6D5A47; 
-        color: #fff; /* เลือกสีตัวอักษร */
+        background-color: #6D5A47;
+        color: #fff;
+        /* เลือกสีตัวอักษร */
     }
 </style>
 
@@ -132,24 +144,48 @@
         <div class="table">
             <table style="transform: translateX(-360px) translateY(70px);">
                 <tr>
-                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
             </table>
         </div>
@@ -157,24 +193,48 @@
         <div class="table">
             <table style="transform: translateX(-40px) translateY(-468px);">
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
             </table>
         </div>
@@ -182,20 +242,36 @@
         <div class="table">
             <table style="transform: translateX(250px) translateY(-1006px);">
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
             </table>
         </div>
@@ -203,16 +279,24 @@
         <div class="table">
             <table style="transform: translateX(450px) translateY(-1545px);">
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
                 <tr>
-                    <td><a href="ConfirmPage.hbs" ><image src="/styles/table.png" style="transform: rotate(90deg);"></image></a></td>
+                    <td><a href="ConfirmPage.hbs?location=Rongyen 1st Floor">
+                            <image src="/styles/table.png" style="transform: rotate(90deg);"></image>
+                        </a></td>
                 </tr>
             </table>
         </div>
@@ -225,6 +309,7 @@
         </div>
 
     </center>
-    
+
 </body>
+
 </html>
