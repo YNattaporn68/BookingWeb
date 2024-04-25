@@ -37,10 +37,18 @@
             border-radius: 60px;
         }
 
+        button.button {
+            font-family: 'Mitr', sans-serif;
+        }
+
+        form {
+            width: 50px;
+        }
+
         .endbutton {
-            width: 300px;
+            width: 200px;
             padding-top: 20px;
-            padding-left: 250px;
+            padding-left: 200px;
         }
 
         .container {
@@ -102,8 +110,13 @@
 </div>
 
     <div class="endbutton">
-        <a href="Endpoint.hbs" class="button">Confirm</a>
-        <a href="rongron.hbs" class="button">Cancel</a>
+        <form action="/endpoint" method="post"> <!-- เพิ่ม form สำหรับส่งข้อมูลไปยังหน้า Endpoint -->
+            <input type="hidden" name="location" value="{{ location }}"> <!-- ส่งข้อมูล location ผ่านฟิลด์แบบซ่อน -->
+            <input type="hidden" name="seats" value="{{ seats }}">
+            <input type="hidden" name="time" value="{{ time }}"> <!-- ส่งข้อมูล time ผ่านฟิลด์แบบซ่อน -->
+            <button type="submit" class="button">Confirm</button> <!-- เพิ่มปุ่มสำหรับยืนยันการจอง -->
+        </form>
+        <a href="/previous-page" class="button">Cancel</a>
     </div>
 
     

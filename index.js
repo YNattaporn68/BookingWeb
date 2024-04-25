@@ -41,6 +41,13 @@ app.use('/Endpoint.hbs', generalRouter);
 
 app.use('/auth', require('./routers/auth'));
 
+app.use((req, res, next) => {
+    res.locals.goBack = () => {
+      res.redirect('back');
+    };
+    next();
+  });
+
 app.listen(9989, () => { 
     console.log('Server is running on http://localhost:9989') 
 });

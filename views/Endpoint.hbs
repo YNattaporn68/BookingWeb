@@ -60,17 +60,11 @@
 
 <body>
     <center>
-        <div class="container">
+         <div class="container">
             <h1>Your booking is confirmed!</h1>
-            <p class="text">
-                <center>Location: </center>
-            </p>
-            <p class="text">
-                <center>Seat(s): </center>
-            </p>
-            <p class="text">
-                <center>Time: </center>
-            </p>
+            <p class="text">Location: {{ location }}</p> <!-- แสดงข้อมูล Location ที่ได้รับมา -->
+            <p class="text">Seat(s): {{ seats }}</p> <!-- แสดงข้อมูล Seats ที่ได้รับมา -->
+            <p class="text">Time: {{ time }}</p> <!-- แสดงข้อมูล Time ที่ได้รับมา -->
         </div>
         
         <div class="endbutton">
