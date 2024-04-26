@@ -1,3 +1,4 @@
+//ผ่าน
 const request = require('supertest');
 const app = require('../index');
 
@@ -11,3 +12,6 @@ describe('GET /LoginPage', () => {
     expect(res.text).toContain('Login');
   });
 });
+//Test Suites: 1 passed, 1 total
+//Tests:       1 passed, 1 total
+

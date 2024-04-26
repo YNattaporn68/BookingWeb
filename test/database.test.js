@@ -1,3 +1,4 @@
+//pass
 const mysql = require("mysql");
 
 describe("Database Connection", () => {
@@ -15,3 +16,6 @@ describe("Database Connection", () => {
         });
     });
 });
+// Test Suites: 1 passed, 1 total
+// Tests:       1 passed, 1 total
+
