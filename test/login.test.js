@@ -1,4 +1,6 @@
 //ผ่าน
+// Test Suites: 1 passed, 1 total
+// Tests:       2 passed, 2 total
 const request = require('supertest');
 const app = require('../index');
 
@@ -23,7 +25,6 @@ describe('Authentication', () => {
       expect(res.text).toContain('Please Provide an email and password');
   });
 });
-// Test Suites: 1 passed, 1 total
-// Tests:       2 passed, 2 total
+
 
 
