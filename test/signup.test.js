@@ -1,4 +1,6 @@
 //pass
+// Test Suites: 1 passed, 1 total
+// Tests:       4 passed, 4 total
 const request = require('supertest');
 const app = require('../index'); // เรียกใช้แอปของคุณ (เปลี่ยนตามชื่อและที่ตั้งของแอปของคุณ)
 
@@ -64,6 +66,5 @@ describe('GET /SignupPage', () => {
     expect(res.text).toContain('Sign up');
   });
 });
-// Test Suites: 1 passed, 1 total
-// Tests:       4 passed, 4 total
+
 
