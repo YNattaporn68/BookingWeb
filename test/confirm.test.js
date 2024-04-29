@@ -1,4 +1,7 @@
 //pass
+// Test Suites: 1 passed, 1 total
+// Tests:       3 passed, 3 total
+
 const request = require('supertest');
 const app = require('../index'); // นำเข้าแอปของคุณ (เปลี่ยนตามชื่อและที่ตั้งของแอปของคุณ)
 
@@ -33,5 +36,3 @@ describe('Confirm Page', () => {
     });
     
 });
-// Test Suites: 1 passed, 1 total
-// Tests:       3 passed, 3 total
