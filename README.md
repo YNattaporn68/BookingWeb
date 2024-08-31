@@ -1,4 +1,5 @@
-#โปรเจ็ควิชา Softwaer Engineering
+โปรเจ็ควิชา CP252 Softwaer Engineering 
+ทำเกี่ยวกับระบบจองโค๊ะภายในโรงอาหารผ่านเว็บไซต์ โดยเน้นกระบวนการทำงานแบบ Agile
 # Introduction 
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
